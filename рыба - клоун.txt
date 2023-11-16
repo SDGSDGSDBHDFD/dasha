@@ -1,0 +1,6 @@
+!pip install roboflow
+
+from roboflow import Roboflow
+rf = Roboflow(api_key="IOhG08rt0Or4TVGd2B4u")
+project = rf.workspace("dasha-divkk").project("-cfgje")
+dataset = project.version(3).download("yolov5")
